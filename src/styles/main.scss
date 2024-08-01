@@ -1,0 +1,75 @@
+@use 'hero';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 8px;
+    color: white;
+}
+
+@mixin title($titleSize: 36px) {
+    font-size: $titleSize;
+    line-height: 110%;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.text {
+    @include text;
+
+    &--small {
+        @include text(14px);
+    }
+}
+
+.title {
+    @include title;
+    margin-bottom: 24px;
+
+    &--small {
+        @include title(24px);
+        margin-bottom: 24px;
+    }
+
+    &--large {
+        @include title(48px);
+        margin-bottom: 24px;
+
+        @media (max-width: 768px) {
+            @include title;
+        }
+    }
+
+    &--no-margin {
+        @include title;
+    }
+}
+
+.button {
+    padding: 8px;
+    color: white;
+    background-color: #234d75;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 100px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten($color: #234d75, $amount: 10%);
+    }
+}
