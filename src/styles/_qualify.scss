@@ -1,0 +1,19 @@
+.qualify {
+    padding-bottom: 48px;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 24px;
+
+        &__item {
+            align-items: center;
+            text-align: center;
+
+            &__img {
+                width: 50%;
+                margin: 24px 0;
+            }
+        }
+    }
+}

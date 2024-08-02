@@ -1,5 +1,6 @@
 @use 'hero';
 @use 'prize';
+@use 'qualify';
 
 * {
     margin: 0;
@@ -75,6 +76,11 @@
     }
 }
 
+.divider {
+    padding: 24px 0;
+    text-align: center;
+}
+
 .content {
     background-image: linear-gradient(#234d75, #001736);
 }
@@ -84,4 +90,8 @@
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.orange {
+    color: orange;
 }
