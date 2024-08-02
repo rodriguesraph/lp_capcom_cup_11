@@ -3,6 +3,7 @@
 @use 'qualify';
 @use 'players';
 @use 'footer';
+@use 'colors';
 
 * {
     margin: 0;
@@ -24,7 +25,7 @@
     font-size: $fontSize;
     font-family: "Roboto", sans-serif;
     margin-bottom: 8px;
-    color: white;
+    color: colors.$colorWhite;
 }
 
 @mixin title($titleSize: 36px) {
@@ -32,7 +33,7 @@
     line-height: 110%;
     font-family: "Anton", sans-serif;
     font-weight: 400;
-    color: white;
+    color: colors.$colorWhite;
 }
 
 .text {
@@ -78,8 +79,8 @@
 
 .button {
     padding: 16px;
-    color: white;
-    background-color: #234d75;
+    color: colors.$colorWhite;
+    background-color: colors.$colorCapcomBlue1;
     border: none;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
@@ -88,7 +89,7 @@
     cursor: pointer;
 
     &:hover {
-        background-color: lighten($color: #234d75, $amount: 10%);
+        background-color: lighten($color: colors.$colorCapcomBlue1, $amount: 10%);
     }
 }
 
@@ -98,16 +99,15 @@
 }
 
 .content {
-    background-image: linear-gradient(#234d75, #001736);
+    background-image: linear-gradient(colors.$colorCapcomBlue1, colors.$colorCapcomBlue2);
 }
 
 .golden {
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    background: colors.$colorGolden;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .orange {
-    color: orange;
+    color: colors.$colorOrange;
 }
