@@ -1,5 +1,5 @@
 .footer {
-    padding: 48px;
+    padding: 48px 0;
 
     &__container {
         text-align: center;
@@ -8,14 +8,18 @@
             display: flex;
             justify-content: center;
 
+            @media (max-width: 768px) {
+                display: block;
+            }
+
             &__item {
                 width: 200px;
                 margin-left: 24px;
                 margin-bottom: 24px;
-            }
 
-            &__text {
-                
+                @media (max-width: 768px) {
+                    margin-left: 0;
+                }
             }
         }
     }
