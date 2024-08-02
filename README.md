@@ -4,7 +4,7 @@ Projeto do Módulo 22 da parte de Front-End do curso "Desenvolvedor Full Stack P
 
 ## Demonstração
 
-O projeto foi hospedado para visualização na plataforma [Vercel](https://projeto-front-end-04-john-wick.vercel.app/).
+O projeto foi hospedado para visualização na plataforma [Vercel](https://lp-capcom-cup-11.vercel.app/).
 
 ## Licença
 
