@@ -1,0 +1,23 @@
+.players {
+    padding-bottom: 48px;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 16px;
+
+        &__item {
+            align-items: center;
+            text-align: center;
+
+            &__img {
+                width: 100%;
+                border-radius: 50%;
+            }
+
+            &__text {
+                margin-top: 16px;
+            }
+        }
+    }
+}

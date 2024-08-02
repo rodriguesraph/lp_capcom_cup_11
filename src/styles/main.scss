@@ -1,6 +1,8 @@
 @use 'hero';
 @use 'prize';
 @use 'qualify';
+@use 'players';
+@use 'footer';
 
 * {
     margin: 0;
@@ -44,6 +46,10 @@
     &--small {
         @include title(24px);
         margin-bottom: 24px;
+
+        &--no-margin {
+            @include title(24px);
+        }
     }
 
     &--large {
@@ -58,6 +64,12 @@
     &--no-margin {
         @include title;
     }
+}
+
+.subtitle {
+    @include text(18px);
+    font-weight: bold;
+    margin-top: 8px;
 }
 
 .button {
