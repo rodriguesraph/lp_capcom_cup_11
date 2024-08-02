@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="hero">
@@ -24,7 +25,7 @@
     </header>
     <main class="content">
         <section class="prize">
-            <div class="prize__container container">
+            <div class="prize__container container" data-aos="fade-up">
                 <img src="./images/capcup-champ.jpg" alt="Foto do campeão da Capcom Cup" class="prize__container__img">
                 <div class="prize__container__text">
                     <h2 class="title--large golden">Um prêmio gigantesco de $1.000.000 ao campeão!</h2>
@@ -33,11 +34,11 @@
             </div>
         </section>
         <section class="qualify">
-            <div class="divider container">
+            <div class="divider container" data-aos="fade-up">
                 <h2 class="title--large orange">Descubra como se classificar</h2>
                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum incidunt repellendus dignissimos nam fugiat cupiditate aut ratione error officia, obcaecati blanditiis. Sint corrupti molestiae quis nulla praesentium ducimus tempora itaque.</p>
             </div>
-            <div class="qualify__container container">
+            <div class="qualify__container container" data-aos="fade-up">
                 <div class="qualify__container__item">
                     <img src="./images/online-premier.png" alt="Ícone Online Premier" class="qualify__container__item__img">
                     <div class="qualify__container__item__text">
@@ -69,13 +70,13 @@
             </div>
         </section>
         <section class="players">
-            <div class="divider container">
+            <div class="divider container" data-aos="fade-up">
                 <h2 class="title--large orange">Jogadores confirmados</h2>
                 <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi minus perferendis rerum illum ducimus, totam deserunt consequuntur expedita ullam assumenda porro, esse laboriosam recusandae quibusdam consequatur enim molestiae libero id.</p>
                 <br>
                 <br>
             </div>
-            <div class="players__container container">
+            <div class="players__container container" data-aos="fade-up">
                 <div class="players__container__item">
                     <img src="./images/daigo-umehara.jpg" alt="Foto do jogador Daigo Umehara" class="players__container__item__img">
                     <div class="players__container__item__text">
@@ -174,5 +175,7 @@
             </div>
         </footer>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
